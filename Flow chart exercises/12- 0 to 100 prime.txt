@@ -1,0 +1,14 @@
+N=3
+A=2
+while(N<=100):
+	if(A<N):
+		if((N%A==0)):
+			N+=1
+			A=2
+		else:
+			A+=1
+	else:
+		print(N)
+		N+=1
+		A=2
+k=input("Input any character to exit.")

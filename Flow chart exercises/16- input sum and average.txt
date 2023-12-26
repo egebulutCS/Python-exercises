@@ -1,0 +1,13 @@
+sum=0
+average=0
+number=0
+counter=0
+while True:
+       	number=int(input("Enter a number(Negative to finish):"))
+       	if(number<0):
+               	break
+       	else:
+               	sum+=number
+               	counter+=1
+average=sum/counter
+print("The average of the numbers give is ",average)

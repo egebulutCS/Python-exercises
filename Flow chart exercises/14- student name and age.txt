@@ -1,0 +1,10 @@
+name=input("What is your name? ")
+year=input("What year were you born? ")
+print("Hi "+name)
+age=2016-year
+if age>21:
+	print (age)
+        print("You are an adult.")
+else:
+        print(age)
+k=input("Input any character to exit.")

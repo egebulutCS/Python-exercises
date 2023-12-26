@@ -1,0 +1,5 @@
+N=2
+while N<=100:
+	print(N)
+	N=N+2
+k=input("Input any character to exit.")

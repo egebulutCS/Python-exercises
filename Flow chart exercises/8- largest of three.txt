@@ -1,0 +1,10 @@
+a=int(input("Number a: "))
+b=int(input("Number b: "))
+c=int(input("Number c: "))
+if a>b and a>c:
+	print(a)
+elif c>a and c>b:
+        print(c)
+else:
+        print(b)
+k=input("Input any character to exit.")

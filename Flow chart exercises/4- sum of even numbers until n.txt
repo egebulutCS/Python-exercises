@@ -1,0 +1,11 @@
+N=2
+a=0
+while N<=n:
+	if N!=n:
+		a=a+N
+		N=N+2
+	else:
+		a=a+n
+		print(a)
+		N=N+2
+k=input("Input any character to exit.")

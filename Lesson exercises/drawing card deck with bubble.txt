@@ -1,0 +1,134 @@
+import math, random
+counter=0
+numbers=[]
+signs=[]
+deck=[]
+spades=[]
+clubs=[]
+diamonds=[]
+hearts=[]
+while counter<13:
+	sign=random.randint(1,4)
+
+	if sign==1:
+
+		signString="Spades"
+
+	elif sign==2:
+
+		signString="Hearts"
+
+	elif sign==3:
+
+		signString="Clubs"
+
+	else:
+
+		signString="Diamonds"
+
+	number=random.randint(1,13)
+
+	if number==13:
+
+		print("The card is a King of",signString)
+
+	elif number==1:
+
+		print("The card is an Ace of",signString)
+
+	elif number==11:
+
+		print("The card is a Jack of",signString)
+
+	elif number==12:
+
+		print("The card is a Queen of",signString)
+
+	else:
+
+		print("The card is ",number,"of",signString)
+
+	i=0
+	while i<counter:
+		if numbers[i]!=number or signs[i]!=sign:
+			i+=1
+		else:
+			print("The card is in the deck already.")
+			break
+	if i==counter:
+		numbers.append(number)
+		signs.append(sign)
+		counter+=1
+print(numbers)
+print(signs)
+i=0
+while i<13:
+        if signs[i]==1:
+                spades.append(numbers[i])
+        elif signs[i]==2:
+                hearts.append(numbers[i])
+        elif signs[i]==3:
+                clubs.append(numbers[i])
+        elif signs[i]==4:
+                diamonds.append(numbers[i])
+        i+=1
+n=1
+while n<=4:
+	if n==1:
+		string=spades
+	elif n==2:
+		string=hearts
+	elif n==3:
+		string=clubs
+	elif n==4:
+		string=diamonds
+	b=-1
+	while -b!=len(string):
+		if len(string)==0:
+			break
+		if string[b]<string[b-1]:
+			temp=string[b-1]
+			string[b-1]=string[b]
+			string[b]=temp
+			b=-1
+		else:
+			b-=1
+	n+=1
+a=" of Spades"
+z=0
+while z<13:
+	n=1
+	while n<=4:
+		if n==1:
+			string=spades
+			stringSign=" of Spades"
+		elif n==2:
+			string=hearts
+			stringSign=" of Hearts"
+		elif n==3:
+			string=clubs
+			stringSign=" of Clubs"
+		elif n==4:
+			string=diamonds
+			stringSign=" of Diamonds"
+		i=0
+		while i<len(string):
+			if string[i]==1:
+				name="Ace"
+			elif string[i]==11:
+				name="Jack"
+			elif string[i]==12:
+				name="Queen"
+			elif string[i]==13:
+				name="King"
+			else:
+				name=str(string[i])
+			i+=1
+			z+=1
+			card=(name+stringSign)
+			a=stringSign
+			deck.append(card)
+		n+=1
+
+print(deck)
+k=input("Press enter to exit")

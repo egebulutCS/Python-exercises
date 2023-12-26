@@ -1,0 +1,28 @@
+int N;
+    int a;
+    public b()
+    {
+        N=3;
+        a=2;
+        while(N<=100)
+        {
+            if(a<N)
+            {
+                if ((N%a==0))
+                {
+                    N++;
+                    a=2;
+                }
+                else
+                {
+                    a++;
+                }
+            }
+            else
+            {
+                System.out.println(N);
+                N++;
+                a=2;
+            }
+        }
+    }

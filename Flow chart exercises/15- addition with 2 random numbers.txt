@@ -1,0 +1,10 @@
+a=random.randrange(1000)
+b=random.randrange(1000)
+print(a)
+print(b)
+dString = input("What is the answer=")
+d = int(dString)
+if a+b==d:
+	print("Correct.")
+else:
+        print("No, the correct answer is",a+b)

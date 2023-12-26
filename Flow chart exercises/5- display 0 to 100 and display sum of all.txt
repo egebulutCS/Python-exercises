@@ -1,0 +1,13 @@
+N=1
+a=0
+while N<=100:
+	if N!=100:
+		print(N)
+		a=N+a
+		N=N+1
+	else:
+		a=a+100
+		print(N)
+		print(a)
+		N=N+1
+k=input("Input any character to exit.")

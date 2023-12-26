@@ -1,0 +1,7 @@
+a=int(input("Number a: "))
+b=int(input("Number b: "))
+if a<b:
+	print(b)
+else:
+        print(a)
+k=input("Input any character to exit.")
